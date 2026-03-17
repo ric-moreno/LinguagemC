@@ -1,4 +1,5 @@
-1. Escreva um programa em linguagem C que leia três notas e seus respectivos pesos, calcule e apresente a média ponderada dessas notas.
+/*1. Escreva um programa em linguagem C que leia três notas e seus respectivos pesos, 
+calcule e apresente a média ponderada dessas notas.*/
 
 #include<stdio.h>
 #include<locale.h>
@@ -37,8 +38,8 @@ int main()
 
 
 
-2. Escreva um programa em linguagem C que receba como entrada o valor do salário de um funcionário, calcule e apresente o novo salário, sabendo-se que
-este sofreu um aumento de 25%.
+/*2. Escreva um programa em linguagem C que receba como entrada o valor do salário de um funcionário, calcule e apresente o novo salário, sabendo-se que
+este sofreu um aumento de 25%.*/
 
 #include<stdio.h>
 #include<locale.h>
@@ -64,8 +65,8 @@ int main()
 
 
 
-3. Escreva um programa em linguagem C que receba como entrada o salário bruto de um funcionário, calcule e apresente o salário líquido, sabendo-se que
-esse funcionário tem gratificação de 5% sobre o salário bruto, e paga imposto de 7% sobre o salário bruto.
+/*3. Escreva um programa em linguagem C que receba como entrada o salário bruto de um funcionário, calcule e apresente o salário líquido, sabendo-se que
+esse funcionário tem gratificação de 5% sobre o salário bruto, e paga imposto de 7% sobre o salário bruto.*/
 
 #include<stdio.h>
 #include<locale.h>
@@ -92,8 +93,8 @@ int main()
 
 
 
-4. Escreva um programa em linguagem C que receba como entrada um horário formado por horas e minutos, calcule e apresente o tempo correspondente em
-minutos.
+/*4. Escreva um programa em linguagem C que receba como entrada um horário formado por horas e minutos, calcule e apresente o tempo correspondente em
+minutos.*/
 
 #include<stdio.h>
 #include<locale.h>
@@ -122,8 +123,8 @@ int main()
 
 
 
-5. Escreva um programa em linguagem C que receba como entradas o ano de nascimento de uma pessoa e o ano atual, calcule e apresente a idade desta
-pessoa, e quantos anos essa pessoa terá em 2030.
+/*5. Escreva um programa em linguagem C que receba como entradas o ano de nascimento de uma pessoa e o ano atual, calcule e apresente a idade desta
+pessoa, e quantos anos essa pessoa terá em 2030.*/
 
 #include<stdio.h>
 #include<locale.h>
@@ -150,9 +151,9 @@ int main()
 
 
 
-6. Considerando que cada degrau de uma escada tem X centímetros de altura, escreva um programa em linguagem C que receba como entradas a altura dos
+/*6. Considerando que cada degrau de uma escada tem X centímetros de altura, escreva um programa em linguagem C que receba como entradas a altura dos
 degraus e a altura que o usuário deseja alcançar subindo a escada. O algoritmo deve calcular e apresentar quantos degraus o usuário deverá subir
-para atingir o seu objetivo. O programa não deve considerar a altura do usuário.
+para atingir o seu objetivo. O programa não deve considerar a altura do usuário.*/
 
 #include<stdio.h>
 #include<locale.h>

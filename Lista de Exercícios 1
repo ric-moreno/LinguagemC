@@ -1,7 +1,6 @@
 1. Escreva um programa em linguagem C que leia três notas e seus respectivos
 pesos, calcule e apresente a média ponderada dessas notas.
 
-
 #include<stdio.h>
 #include<locale.h>
 
@@ -36,9 +35,33 @@ int main()
 }
 
 
+
+
+
 2. Escreva um programa em linguagem C que receba como entrada o valor do
 salário de um funcionário, calcule e apresente o novo salário, sabendo-se que
 este sofreu um aumento de 25%.
+
+#include<stdio.h>
+#include<locale.h>
+
+int main()
+
+{
+    setlocale(LC_ALL, "portuguese");
+	
+	int salario;
+	
+	printf("Digite o valor do salário: ");
+	scanf("%d", &salario);
+	
+	salario = salario * 1.25;
+	
+	printf("O novo salário após o aumento é de R$: %d", salario);
+
+	return 0;
+}
+
 
 
 
@@ -48,6 +71,28 @@ bruto de um funcionário, calcule e apresente o salário líquido, sabendo-se qu
 esse funcionário tem gratificação de 5% sobre o salário bruto, e paga imposto
 de 7% sobre o salário bruto.
 
+#include<stdio.h>
+#include<locale.h>
+
+int main()
+
+{
+    setlocale(LC_ALL, "portuguese");
+	
+	float salario, gratificacao = 0.05, ir = 0.07;
+	
+	printf("Digite o valor do salário: ");
+	scanf("%f", &salario);
+	
+	salario = salario * (1 + gratificacao);
+	salario = salario * (1 - ir);
+	
+	printf("O salário líquido do funcionário é de R$: %.2f", salario);
+	
+	return 0;
+}
+
+
 
 
 
@@ -55,11 +100,59 @@ de 7% sobre o salário bruto.
 formado por horas e minutos, calcule e apresente o tempo correspondente em
 minutos.
 
+#include<stdio.h>
+#include<locale.h>
+
+int main()
+
+{
+    setlocale(LC_ALL, "portuguese");
+    
+    int horas, minutos, total;
+    
+    printf("Digite a quantidade de horas: ");
+    scanf("%d", &horas);
+    
+    printf("Digite a quantidade de minutos: ");
+    scanf("%d", &minutos);
+    
+    total = horas * 60 + minutos;
+    
+    printf("A quantidade total de minutos é de: %d minutos", total);
+    
+    return 0;
+}
+
+
+
 
 
 5. Escreva um programa em linguagem C que receba como entradas o ano de
 nascimento de uma pessoa e o ano atual, calcule e apresente a idade desta
 pessoa, e quantos anos essa pessoa terá em 2030.
+
+#include<stdio.h>
+#include<locale.h>
+
+int main()
+
+{
+    setlocale(LC_ALL, "portuguese");
+    
+    int ano_nasc, ano_atual = 2026, idade, idade_2030;
+    
+    printf("Digite o seu ano de nascimento: ");
+    scanf("%d", &ano_nasc);
+    
+    idade = ano_atual - ano_nasc;
+    idade_2030 = 2030 - ano_nasc;
+    
+    printf("A idade atual da pessoa é: %d e em 2030 esta pessoa terá: %d anos", idade, idade_2030);
+    
+    return 0;
+}
+
+
 
 
 

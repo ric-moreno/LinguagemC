@@ -265,7 +265,7 @@ int main()
 	
 	centena = (num/1) % 10;
 	dezena = (num/10) % 10;
-	unidade = num/100 % 10;
+	unidade = (num/100) % 10;
 	
 	printf("O inverso do número digitado é %d%d%d", centena, dezena, unidade);
 	

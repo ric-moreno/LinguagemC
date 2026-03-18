@@ -120,8 +120,8 @@ int main()
 	printf("Digite uma temperatura em °C: ");
 	scanf("%f", &celsius);
 	
-	fahr = celsius * 33.8;
-	kelvin = celsius * 274.15;
+	fahr = celsius * 1.8 + 32;
+	kelvin = celsius + 273;
 	
 	printf("A temperatura de %.2f°C, corresponde a %.2f°F e %.2fK", celsius, fahr, kelvin);
 	

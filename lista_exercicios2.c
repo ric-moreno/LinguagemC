@@ -38,7 +38,8 @@ int main()
 
 
 
-/*3) Escreva um programa em linguagem C que leia 4 números inteiros, calcule a média aritmética entre esses números e imprima o resultado na tela.*/
+/*3) Escreva um programa em linguagem C que leia 4 números inteiros, 
+calcule a média aritmética entre esses números e imprima o resultado na tela.*/
 
 #include<stdio.h>
 #include<locale.h>
@@ -103,9 +104,10 @@ int main()
 
 
 
-/*5) Escreva um programa em linguagem C que leia uma temperatura na escala Celsius, converta para o seu valor correspondente nas escalas Fahrenheit e Kelvin e imprima esses valores na tela.*/
+/*5) Escreva um programa em linguagem C que leia uma temperatura na escala Celsius, 
+converta para o seu valor correspondente nas escalas Fahrenheit e Kelvin e imprima esses valores na tela.*/
 
-  #include<stdio.h>
+#include<stdio.h>
 #include<locale.h>
 
 int main()
@@ -115,7 +117,7 @@ int main()
 	
 	float celsius, fahr, kelvin;
 	
-	printf("Digite uma temperatura em C°: ");
+	printf("Digite uma temperatura em °C: ");
 	scanf("%f", &celsius);
 	
 	fahr = celsius * 33.8;
@@ -130,7 +132,8 @@ int main()
 
 
   
-/*6) Escreva um programa em linguagem C que leia a base e a altura de um triângulo, calcule a área desse triângulo e imprima o resultado na tela.*/
+/*6) Escreva um programa em linguagem C que leia a base e a altura de um triângulo, 
+calcule a área desse triângulo e imprima o resultado na tela.*/
 
 #include<stdio.h>
 #include<locale.h>
@@ -160,7 +163,8 @@ int main()
 
 
   
-/*7) Escreva um programa em linguagem C que leia o valor de uma velocidade em quilômetros por hora, calcule o valor correspondente em metros por segundo e imprima o resultado na tela.*/
+/*7) Escreva um programa em linguagem C que leia o valor de uma velocidade em quilômetros por hora, 
+calcule o valor correspondente em metros por segundo e imprima o resultado na tela.*/
 
 #include<stdio.h>
 #include<locale.h>
@@ -187,7 +191,8 @@ int main()
 
 
   
-/*8) Escreva um programa em linguagem C que leia o raio de uma circunferência, calcule a área dessa circunferência e imprima o resultado na tela.*/
+/*8) Escreva um programa em linguagem C que leia o raio de uma circunferência, 
+calcule a área dessa circunferência e imprima o resultado na tela.*/
 
 #include<stdio.h>
 #include<locale.h>

@@ -279,8 +279,7 @@ b) se estiver entre 5,1 e 6,0, inclusive, seu conceito é D;
 c) se estiver entre 6,1 e 7,0, inclusive, seu conceito é C; 
 d) se estiver entre 7,1 e 8,0, inclusive, seu conceito é B; 
 e) se estiver entre 8,1 e 10,0, inclusive, seu conceito é A. 
-Escreva um programa que leia as três notas de um aluno, calcule e mostre a média e o conceito do 
-aluno.*/
+Escreva um programa que leia as três notas de um aluno, calcule e mostre a média e o conceito do aluno.*/
 
 #include<stdio.h>
 #include<locale.h>

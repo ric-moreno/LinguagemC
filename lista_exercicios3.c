@@ -133,7 +133,7 @@ int main(){
 	printf("Digite o terceiro número: ");
 	scanf("%d", &num3);
 	
-	/*VERIFICAÇÃO NUM1*/
+	/*VERIFICA NUM1*/
 	if (num1 < num2 && num2 < num3){
 		printf("%d%d%d", num1, num2, num3);
 	}

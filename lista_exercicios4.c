@@ -172,13 +172,17 @@ int main(){
 	printf("Digite um numero inteiro positivo: ");
 	scanf("%d", &num);
 	
-	while(num > 0){
-				
-		if(impar < num && impar % 2 == 1)
-			
+	while(impar < num){
+		
+		if(impar % 2 == 1)
 			printf("%d\n", impar);
 			impar++;
 	}
 	
 	return 0;
 }
+
+
+
+
+

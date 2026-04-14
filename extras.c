@@ -336,3 +336,249 @@ int main(){
 	
 	return 0;
 }
+
+
+
+/*EXERCICIOS DO LIVRO*/
+
+/*1) Faça um programa que leia um número inteiro positivo N e 
+imprima todos os números naturais de 0 até N em ordem crescente.*/
+
+#include<stdio.h>
+
+int main(){
+	
+	int i, num;
+	
+	printf("Digite um numero inteiro: ");
+	scanf("%d", &num);
+	
+	for(i = 0; i <= num; i++){
+		printf("%d\n", i);
+	}
+	return 0;
+}
+
+
+
+/*2) Faça um programa que leia um número inteiro positivo N e 
+imprima todos os números naturais de 0 até N em ordem decrescente.*/
+
+#include<stdio.h>
+
+int main(){
+	
+	int i, num;
+	
+	printf("Digite um numero inteiro: ");
+	scanf("%d", &num);
+	
+	for(i = num; i >= 0; i--){
+		printf("%d\n", i);
+	}
+	return 0;
+}
+
+
+/*3) Faça um programa que leia um número inteiro N e depois 
+imprima os N primeiros números naturais ímpares.*/
+
+#include<stdio.h>
+
+int main(){
+	
+	int i, num;
+	
+	printf("Digite um numero inteiro: ");
+	scanf("%d", &num);
+	
+	for(i = 1; i <= num; i++){
+		
+		if(i % 2 != 0)
+		printf("%d\n", i);
+	}
+	
+	return 0;
+}
+
+
+
+/*4) Faça um programa que determine e mostre os cinco primeiros múltiplos de 3 considerando números maiores que 0.*/
+
+#include<stdio.h>
+
+int main(){
+	
+	int i, contador = 0;
+	
+	for(i = 3; contador < 5; i++){
+		
+		if(i % 3 == 0){
+		printf("%d ", i);
+		contador++;
+		}
+	}
+	return 0;
+}
+
+
+
+
+/*5) Faça um programa que calcule e mostre a soma dos 50 primeiros números pares.*/
+
+#include<stdio.h>
+
+int main(){
+	
+	int i, contador = 0, soma = 0;
+	
+	for(i = 1; contador < 50; i++){
+		if(i % 2 == 0){
+			printf("%d ", i);
+			soma += i;
+			contador++;
+		}
+	}
+	printf("\nsoma: %d", soma, contador);
+	
+	return 0;
+}
+
+
+
+
+
+/*6) Faça um programa que mostre uma contagem regressiva na tela, iniciando em 10 e terminando em 0. 
+Mostre uma mensagem “FIM!” após a contagem.*/
+
+#include<stdio.h>
+
+int main(){
+	
+	int i;
+	
+	for(i = 10; i >= 0; i--){
+	
+		printf("%d\n", i);
+	}
+	
+	printf("FIM");
+	return 0;
+	
+}
+
+
+
+
+/*7) Elabore um programa que peça ao usuário para digitar 10 valores. Some esses valores e apresente o resultado na tela.*/
+
+#include<stdio.h>
+
+int main(){
+	
+	int i = 1, soma = 0, num;
+	
+	do{
+		printf("Digite um numero inteiro: ");
+		scanf("%d", &num);
+		soma += num;
+		i++;
+		
+	} while(i <= 10);
+	
+	printf("Soma: %d ", soma);
+	return 0;
+}
+
+
+
+/*8) Faça um programa que leia 10 inteiros e imprima sua média.*/
+
+#include<stdio.h>
+
+int main(){
+	
+	int num, soma, i, media;
+	
+	for(i = 1; i <= 10; i++){
+		
+		printf("Digite um numero inteiro: ");
+		scanf("%d", &num);
+		soma += num;
+
+	}
+	
+	media = soma / 10;
+	printf("Media: %d", media);
+	return 0;
+}
+
+
+
+
+/*9) Escreva um programa que leia 10 números e escreva o menor valor lido e o maior valor lido.*/
+
+#include<stdio.h>
+
+int main(){
+	
+	int i, num, menor, maior;
+	
+	for(i = 1; i <= 10; i++){
+		
+		printf("Digite um numero inteiro: ");
+		scanf("%d", &num);
+		
+		if(i == 1){
+		
+			maior = num;
+			menor = num;
+		}
+		
+		if(num > maior){
+		
+			maior = num;
+		}
+		
+		if(num < menor){
+		
+			menor = num;
+		}
+	}
+
+	
+	printf("Menor numero: %d ", menor);
+	printf("Maior numero: %d ", maior);
+}
+
+
+
+
+
+/*10) Faça um programa que leia 10 inteiros positivos, ignorando não positivos, e imprima sua média.*/
+
+#include<stdio.h>
+
+int main(){
+	
+	int num, i, soma = 0, media;
+	
+	do{
+		
+		printf("Digite um numero inteiro: ");
+		scanf("%d", &num);
+		
+		if(num > 0){
+		
+		soma += num;
+		i++;
+	}
+		else
+			printf("Numero invalido: ");
+			
+	} while(i < 10);
+	
+	media = soma / 10;
+	printf("Media: %d", media);
+	return 0;
+}

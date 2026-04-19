@@ -4,9 +4,8 @@
 #include<stdio.h>
 #include<locale.h>
 
-int main()
-
-{
+int main(){
+	
 	setlocale(LC_ALL, "portuguese");
 	
 	printf("Eu vou aprender a programar em Linguagem C na disciplina Algoritmos e Programação I");

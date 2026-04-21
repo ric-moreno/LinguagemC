@@ -23,7 +23,8 @@ int main(){
 }
 
 
-/*TODOS OS NUMEROS DE 1 A 9*/
+
+/*IMPRIME A TABUADA DE TODOS OS NUMEROS DE 1 A 9*/
 
 #include<stdio.h>
 

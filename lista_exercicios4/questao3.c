@@ -16,10 +16,12 @@ int main(){
 		
 		if (num != 0){
 		
-		soma = soma + num;
-		contador++;
+			soma = soma + num;
+			contador++;
 				
 		}
+		else
+			printf("Foi digitado zero");
 	}
 	
 	media = soma / contador;

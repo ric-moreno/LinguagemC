@@ -5,6 +5,42 @@ O programa deve testar qual dos números digitados é o menor e qual é o maior,
 #include<stdio.h>
 
 int main(){
+	int X, Y, i, menor, maior;
+	
+	printf("Digite o valor de X: ");
+	scanf("%d", &X);
+	printf("Digite o valor de Y: ");
+	scanf("%d", &Y);
+	
+	if(X == Y || X <= 0 || Y <= 0){
+		printf("X e Y precisam ser positivos, nao iguais\n");
+		return 0;
+	}
+	
+	if(X < Y){
+		menor = X;
+		maior = Y;
+	}
+	else{
+		menor = Y;
+		maior = X;
+	}
+	
+	i = menor;
+	
+	while(i <= maior){
+		printf("%d ", i);
+		i++;
+	}
+	return 0;
+}
+
+
+
+/*====== DO-WHILE ======*/
+#include<stdio.h>
+
+int main(){
 	
 	int X, Y, inicio, fim;
 	

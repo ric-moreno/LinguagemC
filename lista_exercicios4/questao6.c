@@ -6,6 +6,39 @@ O programa deve parar a leitura dos números quando o usuário digitar zero ou u
 
 int main(){
 	
+	int num, menor;
+	
+	printf("Digite um numero inteiro positivo, 0 para Sair: ");
+	scanf("%d", &num);
+	
+	if(num <= 0){
+        printf("Finalizando o programa\n");
+        return 0;
+    }
+    
+	menor = num;
+	
+	while(num > 0){
+			
+		if(num < menor)
+			menor = num;
+			
+		printf("Digite um novo numero inteiro positivo, 0 para Sair: ");
+		scanf("%d", &num);
+	}
+	
+	printf("Finalizando o programa\n");
+	printf("O menor numero digitado foi: %d\n", menor);
+	return 0;
+}
+
+
+
+/*====== DO-WHILE ======*/
+#include<stdio.h>
+
+int main(){
+	
 	int num, menor = 0;
 	
 	do{

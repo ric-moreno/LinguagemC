@@ -8,6 +8,38 @@ int main(){
 	
 	int X, Y, i;
 	
+	printf("Digite o valor de X: ");
+	scanf("%d", &X);
+	
+	printf("Digite o valor de Y: ");
+	scanf("%d", &Y);
+	
+	if(X <= 0 || Y <= 0){
+		printf("Digite numeros inteiros positivos\n");
+		return 0;
+	}
+	
+	if(X == Y || Y < X){
+		printf("X e Y nao podem ser iguais e Y nao pode ser menor que X\n");
+		return 0;
+	}
+	
+	while(X <= Y){
+		printf("%d ", X);
+		X++;
+	}
+	return 0;
+}
+
+
+
+/*====== DO-WHILE ======*/
+#include<stdio.h>
+
+int main(){
+	
+	int X, Y, i;
+	
 		do{
 			
 			printf("Digite o primeiro numero inteiro positivo X: ");

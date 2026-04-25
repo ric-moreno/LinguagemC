@@ -2,6 +2,35 @@
 ao final, informe quantos números pares e quantos números ímpares foram digitados. 
 O programa deve parar a leitura dos números quando o usuário digitar zero ou um número negativo.*/
 
+int main(){
+	
+	int num, par = 0, impar = 0;
+	
+	printf("Digite um numero inteiro positivo, 0 para Sair: ");
+	scanf("%d", &num);
+		
+	while(num > 0){
+			
+		if(num <= 0)
+			printf("Finalizando o programa");
+		else{
+		
+			if(num % 2 == 0)
+				par++;
+			else
+				impar++;
+		}
+		
+		printf("Digite um numero inteiro positivo, 0 para Sair: ");
+		scanf("%d", &num);
+	}
+	printf("Foram digitados %d pares e %d impares\n", par, impar);
+	return 0;
+}
+
+
+
+/*====== DO-WHILE ======*/
 #include<stdio.h>
 
 int main(){

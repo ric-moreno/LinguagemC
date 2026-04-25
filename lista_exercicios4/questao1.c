@@ -12,3 +12,21 @@ int main(){
 		a = a + 7;
 	}
 }
+
+
+/*====== DO-WHILE ======*/
+#include<stdio.h>
+
+int main(){
+	
+	int num = 7;
+	
+	do{
+		
+		if(num % 7 == 0)
+			printf("%d ", num);
+			num+= 7;
+			
+	} while(num < 1000);
+	return 0;
+}

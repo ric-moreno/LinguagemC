@@ -22,3 +22,27 @@ int main(){
 	}
 	return 0;
 }
+
+
+/*====== DO-WHILE ======*/
+#include<stdio.h>
+
+int main(){
+	
+	int num, i = 1;
+	
+	printf("Digite um numero inteiro positivo: ");
+	scanf("%d", &num);
+	
+	if(num <= 0)
+		return 0;
+		
+	do{
+		
+		if(i % 2 != 0)
+		printf("%d ", i);
+		i++;
+		
+	} while(i < num);
+	return 0;
+}

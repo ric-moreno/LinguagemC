@@ -28,3 +28,32 @@ int main(){
 	printf("Media %.2f\n", media);
 	return 0;
 }
+
+
+/*====== DO-WHILE ======*/
+#include<stdio.h>
+
+int main(){
+	
+	int num, cont = 0;
+	float media, soma = 0;
+	
+	do{
+		printf("Digite um numero: ");
+		scanf("%d", &num);
+		
+		if(num != 0){
+			soma += num;
+			cont++;
+		}
+				
+	} while(num != 0);
+	
+	if(cont > 0){
+		media = soma / cont;
+		printf("Media dos numeros digitados: %.2f\n", media);
+	}
+	else
+		printf("O usuario digitou 0. Finalizando...\n");
+	return 0;
+}

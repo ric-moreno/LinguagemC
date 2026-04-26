@@ -2,10 +2,10 @@
 De acordo com a tabela a seguir, o programa deve verificar e mostrar qual a classificação dessa pessoa.
 
 							        PESO
-ALTURA		    < 60	>= 60 <= 90	   > 90
-< 1.2			      A			  D			      G
->= 1.2 <= 1.7	  B			  E			      H
-> 1.7			      C			  F			      I	*/
+ALTURA			< 60	 >= 60 <= 90	  > 90
+< 1.2			  A			  D			    G
+>= 1.2 <= 1.7	  B			  E			    H
+> 1.7			  C			  F		        I	*/
 
 #include<stdio.h>
 #include<locale.h>

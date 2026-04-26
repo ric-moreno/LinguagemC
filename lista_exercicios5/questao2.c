@@ -24,3 +24,30 @@ int main(){
 	
 	return 0;
 }
+
+
+
+/*====== TABUADA INTEIRA ======*/
+#include<stdio.h>
+
+int main(){
+
+    int i, j;
+
+    for(j=1; j<=9; j++){
+
+        printf("Tabuada do %d\n", j);
+
+        for(i=1; i<=9; i++){
+
+            printf("%d + %d = %d\t", j, i, j+i);
+            printf("%d - %d = %d\t", j, i, j-i);
+            printf("%d / %d = %.2f\t", j, i, (float)j/i);
+            printf("%d * %d = %d\n", j, i, j*i);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}

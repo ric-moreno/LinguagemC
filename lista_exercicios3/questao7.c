@@ -1,4 +1,5 @@
-/*7) A média final de um estudante é calculada a partir de três notas atribuídas respectivamente a um trabalho de laboratório, a uma avaliação semestral e a um exame final: 
+/*7) A média final de um estudante é calculada a partir de três notas atribuídas respectivamente a um trabalho de laboratório, 
+a uma avaliação semestral e a um exame final: 
 a) se a média do aluno estiver entre 0,0 e 5,0, inclusive, então seu conceito é E; 
 b) se estiver entre 5,1 e 6,0, inclusive, seu conceito é D; 
 c) se estiver entre 6,1 e 7,0, inclusive, seu conceito é C; 

@@ -39,17 +39,24 @@ int main(){
 
 int main(){
 	
-	int num, menor = 0;
+	int num, menor;
 	
+	printf("Digite um numero inteiro positivo: ");
+	scanf("%d", &num);
+	
+	if(num > 0)
+		menor = num;
+	else
+		return 0;
+		
 	do{
-		printf("Digite um numero inteiro positivo (0 ou negativo para parar): ");
+		printf("Digite um numero inteiro positivo: ");
 		scanf("%d", &num);
 		
-		if(num > 0)
+		if(num > 0 && num < menor)
 			menor = num;
-				
+			
 	} while(num > 0);
-	
-	printf("O menor numero digitado e: %d", menor);
+	printf("O menor numero digitado e: %d\n", menor);
 	return 0;
 }

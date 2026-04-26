@@ -18,3 +18,21 @@ int main(){
 	
 	return 0;
 }
+
+
+
+/*====== DO-WHILE ======*/
+#include<stdio.h>
+
+int main(){
+	
+	int num = 100;
+	
+	do{
+		
+		if(num % 9 == 0)
+		printf("%d ", num);
+		num++;
+		
+	} while(num < 1000);
+}

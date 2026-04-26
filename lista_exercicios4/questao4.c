@@ -21,3 +21,23 @@ int main(){
 	printf("O maior numero digitado e: %d", maior);
 	return 0;
 }
+
+
+/*====== DO-WHILE ======*/
+#include<stdio.h>
+
+int main(){
+
+    int num, maior = 0;
+
+    do{
+        printf("Digite um numero inteiro positivo: ");
+        scanf("%d", &num);
+
+        if(num > maior)
+            maior = num;
+
+    } while(num > 0);
+    printf("O maior numero digitado e: %d\n", maior);
+    return 0;
+}

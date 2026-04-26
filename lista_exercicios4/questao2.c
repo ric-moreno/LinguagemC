@@ -21,3 +21,24 @@ int main(){
 	printf("Soma: %d\n", soma);
 	return 0;
 }
+
+
+/*====== DO-WHILE ======*/
+#include<stdio.h>
+
+int main(){
+	int soma = 0, num;
+	
+	do{
+		printf("Digite um numero inteiro: ");
+		scanf("%d", &num);
+		
+		if(num != 0)
+			soma += num;
+		else
+			printf("Finalizando programa...\n");
+	} while(num !=0);
+	
+	printf("Soma dos numeros digitados: %d\n", soma);
+	return 0;
+}
